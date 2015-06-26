@@ -13,7 +13,7 @@ angular.module('controller', ['services'])
     }
 
     $scope.search = function(user_email){
-        var contact = fullcontactService.query({"email": user_email, "key": "3a1736bb3d27057d"});
+        var contact = fullcontactService.query({"email": user_email, "key": "<full contact key>"});
         contact.getperson(function(successresponse){
             console.log(successresponse)
             $scope.photo_list = successresponse.photos;
